@@ -3,7 +3,10 @@ def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
     m = len(image)
     for i in range(m):
         n = len(image[i])
+        p = (n-1)/2
         for j in range(n):
+            if j > p:
+                break
             image[i][j], image[i][n-1-j] = image[i][n-1-j], image[i][j]
 
     for i in range(m):
@@ -12,6 +15,6 @@ def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
             image[i][j] = 1 - image[i][j]
     
     return image
-
+    
 
     
