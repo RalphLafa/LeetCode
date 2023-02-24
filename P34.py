@@ -8,7 +8,7 @@ def searchRange(self, nums: List[int], target: int) -> List[int]:
 
         if len(result) == 0:
             first, last = -1, -1
-        else:
+        else: 
             first, last = result[0], result[-1]
             
         result = [first, last]
