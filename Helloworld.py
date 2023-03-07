@@ -1,1 +1,2 @@
-print("Hello World!:D")
+a = set()
+print(type(a))
